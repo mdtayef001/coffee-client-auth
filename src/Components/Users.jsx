@@ -24,7 +24,7 @@ const Users = () => {
         //   icon: "success",
         // });
 
-        fetch(`http://localhost:5000/users/${id}`, {
+        fetch(`https://sever-snowy.vercel.app/users/${id}`, {
           method: "DELETE",
         })
           .then((res) => res.json())

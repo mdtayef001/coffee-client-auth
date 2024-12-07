@@ -23,7 +23,7 @@ const Signup = () => {
           email,
           createTime,
         };
-        fetch("http://localhost:5000/users", {
+        fetch("https://sever-snowy.vercel.app/users", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify(newUser),

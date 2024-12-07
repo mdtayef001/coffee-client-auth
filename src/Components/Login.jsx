@@ -15,7 +15,7 @@ const Login = () => {
         const user = result.user;
         const lastSignInTime = user?.metadata?.lastSignInTime;
         const loginInfo = { email, lastSignInTime };
-        fetch(`http://localhost:5000/users`, {
+        fetch(`https://sever-snowy.vercel.app/users`, {
           method: "PATCH",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify(loginInfo),
